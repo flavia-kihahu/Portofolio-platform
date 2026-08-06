@@ -14,7 +14,7 @@ export default function Navbar() {
           Maker
         </h1>
       </div>
-      <button onClick={handleProjectsClick} className="inline-flex items-center justify-center bg-linear-to-r from-violet-500 to-fuchsia-500 w-30 h-12 text-white font-bold text-base rounded-full cursor-pointer transition-transform duration-300 hover:scale-110">
+      <button onClick={handleProjectsClick} className="inline-flex items-center justify-center bg-linear-to-r from-blue-500 to-blue-700 w-30 h-12 text-white font-bold text-base rounded-full cursor-pointer transition-transform duration-300 hover:scale-110">
         See Projects
       </button>
     </nav>

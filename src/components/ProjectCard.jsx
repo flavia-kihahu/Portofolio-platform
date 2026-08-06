@@ -24,7 +24,7 @@ export default function ProjectCard({
         <div className="relative overflow-hidden rounded-3xl flex justify-end">
         <button
           onClick={() => onDelete(project.id)}
-          className="rounded-xl bg-red-500 w-8 h-8 font-semibold text-black flex items-center justify-center transition hover:bg-red-700"
+          className="rounded-xl bg-red-100 w-8 h-8 font-semibold text-red-500 flex items-center justify-center transition hover:bg-red-700"
         >
           <Trash2 />
         </button>

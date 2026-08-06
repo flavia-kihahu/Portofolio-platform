@@ -10,7 +10,7 @@ body{
   font-family: 'Poppins', sans-serif;
 }
 
-.navbar {
+/* .navbar {
   padding: 20px;
   display: flex;
   justify-content: space-between;
@@ -50,4 +50,4 @@ body{
 
 .project-btn:hover {
   transform: scale(1.1);
-}
+} */

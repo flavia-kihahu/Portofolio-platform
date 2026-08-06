@@ -5,7 +5,7 @@ export default function ProjectCard({
   onDelete,
 }) {
   return (
-    <div className="overflow-hidden rounded-3xl border border-slate-700 bg-white shadow-lg transition duration-300 hover:-translate-y-2 hover:border-violet-500">
+    <div className="overflow-hidden rounded-3xl border border-transparent bg-white shadow-lg transition duration-300 hover:-translate-y-2 hover:border-violet-500">
       <img
         src={project.image}
         alt={project.title}
@@ -21,7 +21,7 @@ export default function ProjectCard({
         <p className="text-lg text-stone-600">
           {project.description}
         </p>
-        <div className="relative overflow-hidden rounded-3xl flex flex-row-reverse">
+        <div className="relative overflow-hidden rounded-3xl flex justify-end">
         <button
           onClick={() => onDelete(project.id)}
           className="rounded-xl bg-red-500 w-8 h-8 font-semibold text-black flex items-center justify-center transition hover:bg-red-700"

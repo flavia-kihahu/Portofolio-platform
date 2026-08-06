@@ -7,8 +7,8 @@ export default function Info() {
       style={{ backgroundImage: `url(${maker})` }}>
         <div className="absolute inset-0 bg-blue-950/75"></div>
         <div className="relative z-10">
-        <h1 className="text-5xl font-bold">
-            Maker
+        <h1 className="text-4xl font-bold">
+            TechMaker
         </h1>
         <p className="mt-6 text-lg leading-8 text-violet-100">
             Turn your ideas into real digital products. Showcase your projects in one place and let your work speak for itself.

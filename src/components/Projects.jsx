@@ -71,8 +71,8 @@ export default function Projects({ projects = defaultProjects, onDelete }) {
     return (
         <section id="projects" className="min-h-screen bg-stone-100 px-8 py-20">
             <div className="mx-auto max-w-7xl">
-                <div className="mb-20">
-                    <h2 className="text-5xl font-bold text-black mb-4">Projects</h2>
+                <div>
+                    <h2 className="text-4xl font-bold text-black mb-4">Projects</h2>
                 </div>
                 <div className="mb-20 flex items-center gap-6">
                     <div className="w-full max-w-8xl">
@@ -81,10 +81,6 @@ export default function Projects({ projects = defaultProjects, onDelete }) {
                             onClear={handleClear}
                         />
                     </div>
-
-                    <p className="text-stone-600 font-medium text-lg whitespace-nowrap">
-                        {filteredProjects.length} {filteredProjects.length === 1 ? "Project" : "Projects"}
-                    </p>
                 </div>
                 {filteredProjects.length > 0 ? (
                     <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">

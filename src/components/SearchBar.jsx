@@ -43,10 +43,10 @@ export default function SearchBar({ onSearch, onClear }) {
                 )}
                 <button
                     onClick={handleSearch}
-                    className="p-4 text-white bg-blue-500 hover:bg-blue-600 rounded-full transition shadow-md hover:shadow-lg"
+                    className="text-blue-500 hover:bg-blue-300 rounded-full transition shadow-md hover:shadow-lg"
                     title="Search projects"
                 >
-                    <Search size={24} />
+                    <Search size={28} />
                 </button>
             </div>
         </div>

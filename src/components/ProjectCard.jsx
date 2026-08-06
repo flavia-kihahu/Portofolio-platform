@@ -15,7 +15,7 @@ export default function ProjectCard({
         <span className="rounded-full text-md text-blue-700">
           {project.category}
         </span>
-        <h3 className="text-3xl font-bold text-stone-900">
+        <h3 className="text-2xl font-bold text-stone-900">
           {project.title}
         </h3>
         <p className="text-lg text-stone-600">

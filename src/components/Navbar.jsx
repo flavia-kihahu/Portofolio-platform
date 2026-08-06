@@ -11,7 +11,7 @@ export default function Navbar() {
       <div className="flex items-center gap-2">
         <img src={logo} alt="Maker Logo" className="w-20 h-20"/>
         <h1 className="text-shadow-gray-900 text-3xl font-bold">
-          Maker
+          TechMaker
         </h1>
       </div>
       <button onClick={handleProjectsClick} className="inline-flex items-center justify-center bg-linear-to-r from-blue-500 to-blue-700 w-30 h-12 text-white font-bold text-base rounded-full cursor-pointer transition-transform duration-300 hover:scale-110">

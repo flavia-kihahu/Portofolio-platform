@@ -19,13 +19,13 @@ const AddProject = ({ onAddProject }) => {
 
   return (
     <section className="bg-stone-100 flex items-center justify-center px-6 pt-4 pb-12">
-      <div className="grid w-full max-w-7xl overflow-hidden rounded-3xl shadow-2xl lg:grid-cols-2">
+      <div className="grid w-full max-w-7xl overflow-hidden rounded-2xl shadow-2xl lg:grid-cols-2">
         <Info />
         <div className="bg-white p-10 lg:p-12">
-            <span className="rounded-full px-4 py-1 text-sm font-semibold text-blue-700">
+            <span className="rounded-full px-4 py-1 text-md font-semibold text-blue-700">
                 Project Management
             </span>
-          <h2 className="text-3xl font-bold text-stone-900">
+          <h2 className="text-2xl font-bold text-stone-900">
             Add Project
           </h2>
           <p className="mt-2 mb-8 text-stone-500">
@@ -84,7 +84,7 @@ const AddProject = ({ onAddProject }) => {
             </div>
             <button
               type="submit"
-              className="w-full rounded-xl bg-blue-400 py-3 text-lg font-semibold text-white transition hover:scale-105"
+              className="w-full rounded-xl mt-10 bg-blue-400 py-3 text-lg font-semibold text-white transition hover:scale-105"
             >
               Add Project
             </button>

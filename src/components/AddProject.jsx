@@ -10,7 +10,7 @@ const AddProject = ({ onAddProject }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!title.trim()) return;
-    onAddProject({ title, description, image, category, id: Date.now() });
+    onAddProject({ title, description, image: image || null, category, id: Date.now() });
     setTitle("");
     setDescription("");
     setImage("");
@@ -22,15 +22,18 @@ const AddProject = ({ onAddProject }) => {
       <div className="grid w-full max-w-7xl overflow-hidden rounded-3xl shadow-2xl lg:grid-cols-2">
         <Info />
         <div className="bg-white p-10 lg:p-12">
+            <span className="rounded-full px-4 py-1 text-sm font-semibold text-blue-700">
+                Project Management
+            </span>
           <h2 className="text-3xl font-bold text-stone-900">
             Add Project
           </h2>
           <p className="mt-2 mb-8 text-stone-500">
-            Fill in the details below to add a new project.
+            Fill in the details below to add a new project. Keep the details clear and concise.
           </p>
           <form onSubmit={handleSubmit} className="space-y-6">
             <div>
-              <label className="mb-2 block font-medium text-stone-700">
+              <label className="mb-2 block text-sm font-semibold uppercase tracking-wide text-stone-700">
                 Title
               </label>
               <input
@@ -42,7 +45,7 @@ const AddProject = ({ onAddProject }) => {
               />
             </div>
             <div>
-              <label className="mb-2 block font-medium text-stone-700">
+              <label className="mb-2 block text-sm font-semibold uppercase tracking-wide text-stone-700">
                 Description
               </label>
               <textarea
@@ -54,7 +57,7 @@ const AddProject = ({ onAddProject }) => {
               />
             </div>
             <div>
-              <label className="mb-2 block font-medium text-stone-700">
+              <label className="mb-2 block text-sm font-semibold uppercase tracking-wide text-stone-700">
                 Category
               </label>
               <select
@@ -70,7 +73,7 @@ const AddProject = ({ onAddProject }) => {
               </select>
             </div>
             <div>
-              <label className="mb-2 block font-medium text-stone-700">Image URL</label>
+              <label className="mb-2 block text-sm font-semibold uppercase tracking-wide text-stone-700">Image URL</label>
               <input
                 type="text"
                 value={image}

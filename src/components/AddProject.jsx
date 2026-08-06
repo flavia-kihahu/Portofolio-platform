@@ -66,10 +66,10 @@ const AddProject = ({ onAddProject }) => {
                 className="w-full rounded-xl border border-stone-300 px-4 py-3 outline-none transition focus:border-violet-500 focus:ring-2 focus:ring-violet-200"
               >
                 <option value="">Select category</option>
-                <option value="Web Design">Web Design</option>
-                <option value="Robotics">Robotics</option>
-                <option value="AI">AI</option>
-                <option value="Repair">Repair</option>
+                <option value="Web Design">Category 1-Web Design</option>
+                <option value="Robotics">Category 2-Robotics</option>
+                <option value="AI">Category 3-AI</option>
+                <option value="Repair">Category 4-Repair</option>
               </select>
             </div>
             <div>

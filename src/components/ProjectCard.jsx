@@ -7,7 +7,7 @@ export default function ProjectCard({
   return (
     <div className="overflow-hidden rounded-3xl border border-transparent bg-white shadow-lg transition duration-300 hover:-translate-y-2 hover:border-violet-500">
       <img
-        src={project.image}
+        src={project.image || "https://via.placeholder.com/400x300"}
         alt={project.title}
         className="h-64 w-full object-cover"
       />

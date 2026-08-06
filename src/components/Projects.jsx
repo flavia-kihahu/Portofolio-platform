@@ -55,19 +55,17 @@ const defaultProjects = [
 ];
 
 export default function Projects({ projects = defaultProjects, onDelete }) {
-    const [displayedProjects, setDisplayedProjects] = useState(projects);
-    const handleSearch = (searchTerm) => {
-        const filtered = projects.filter((project) => 
-            project.category.toLowerCase().includes(searchTerm.toLowerCase()) ||
-            project.title.toLowerCase().includes(searchTerm.toLowerCase())
-        );
-        setDisplayedProjects(filtered);
+    const [searchTerm, setSearchTerm] = useState("");
+    const handleSearch = (term) => {
+        setSearchTerm(term);
     };
-
     const handleClear = () => {
-        setDisplayedProjects(projects);
+        setSearchTerm("");
     };
-    const filteredProjects = displayedProjects;
+    const filteredProjects = projects.filter((project) =>
+        project.category.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        project.title.toLowerCase().includes(searchTerm.toLowerCase())
+    );
     return (
         <section id="projects" className="min-h-screen bg-stone-100 px-8 py-20">
             <div className="mx-auto max-w-7xl">
